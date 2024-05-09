@@ -27,19 +27,24 @@ function SumCalculator() {
   return (
     <div>
       <h2>Calculator</h2>
+
       <div>
-        <label htmlFor="inputA">Enter number a:</label>
+        <label htmlFor="inputA">Enter number a: </label>
         <input type="text" id="inputA" name="a" value={a} onChange={handleInputChange} />
       </div>
+
       <div>
-        <label htmlFor="inputB">Enter number b:</label>
+        <label htmlFor="inputB">Enter number b: </label>
         <input type="text" id="inputB" name="b" value={b} onChange={handleInputChange} />
       </div>
+
       <button onClick={calculateSum}>Calculate Sum</button>
+      
       <div>
         <label>Sum: </label>
         <span>{sum}</span>
       </div>
+
     </div>
   );
 }
